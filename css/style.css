@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background-color: var(--secundarioOscuro);
+    background-color: var(--primario);
     color: var(--blanco);
     padding: 10px 20px;
 }
@@ -33,7 +33,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--primario);
+    color: var(--blanco);
     text-decoration: none;
 }
 

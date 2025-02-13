@@ -243,6 +243,10 @@ h3{
     appearance: none;
 }
 
+option{
+    background-color: var(--primarioOscuro);
+}
+
 .formulario__submit{
     background-color: var(--secundario);
     border: none;

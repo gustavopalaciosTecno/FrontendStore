@@ -166,5 +166,26 @@
     <p class="footer__texto">Front End Store -  Todos los derechos reservados 2025</p>
    </footer>
     <script type="text/javascript" src="app.js"></script>
+    <script>
+        // Opcional: detectar si el navegador soporta la API de compartir
+        if (navigator.share) {
+            const shareButton = document.createElement('button');
+            shareButton.textContent = "Compartir esta página";
+            document.body.appendChild(document.createElement('br'));
+            document.body.appendChild(shareButton);
+
+            shareButton.addEventListener('click', () => {
+                navigator.share({
+                    title: 'Descarga tu video',
+                    text: 'Mirá este video que te comparto',
+                    url: window.location.href
+                }).then(() => {
+                    console.log('Compartido con éxito');
+                }).catch((error) => {
+                    console.error('Error al compartir:', error);
+                });
+            });
+        }
+    </script>
 </body>
 </html>
